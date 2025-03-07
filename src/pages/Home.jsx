@@ -11,7 +11,6 @@ function Home() {
       <Specialisation />
       <TopDoctors />
       <LearnMoreBaner />
-      <Footer />
     </div>
   );
 }
