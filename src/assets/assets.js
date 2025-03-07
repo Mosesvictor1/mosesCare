@@ -333,7 +333,7 @@ export const doctors = [
     status: "Un_available",
     name: "Dr. Amelia Hill",
     image: doc15,
-    speciality: "Dermatologist",
+    speciality: "Gastroenterologist",
     degree: "MBBS",
     experience: "1 Years",
     about:

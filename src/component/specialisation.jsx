@@ -4,16 +4,27 @@ import { Link } from "react-router-dom";
 
 const Specialisation = () => {
   const specialisations = [
-    { icon: "🏥", speciality: "Dentistry" },
-    { icon: "🩺", speciality: "Primary Care" },
-    { icon: "❤️", speciality: "Cardiology" },
-    { icon: "📊", speciality: "MRI Resonance" },
-    { icon: "🧪", speciality: "Blood Test" },
-    { icon: "🛡️", speciality: "Psicologist" },
+    { icon: "🏥", speciality: "General physician" },
+    { icon: "🩺", speciality: "Gynecologist" },
+    { icon: "❤️", speciality: "Dermatologist" },
+    { icon: "📊", speciality: "Pediatricians" },
+    { icon: "🧪", speciality: "Neurologist"},
+    { icon: "🛡️", speciality: "Gastroenterologist" },
     { icon: "🏥", speciality: "Laboratory" },
     { icon: "🦴", speciality: "X-Ray" },
   ];
 
+  // const specialisations = [
+  //   { icon: "🏥", speciality: "Dentistry" },
+  //   { icon: "🩺", speciality: "Primary Care" },
+  //   { icon: "❤️", speciality: "Cardiology" },
+  //   { icon: "📊", speciality: "MRI Resonance" },
+  //   { icon: "🧪", speciality: "Blood Test" },
+  //   { icon: "🛡️", speciality: "Psicologist" },
+  //   { icon: "🏥", speciality: "Laboratory" },
+  //   { icon: "🦴", speciality: "X-Ray" },
+  // ];
+  
   return (
     <section className="bg-gradient-to-b from-blue-50 to-white py-16 px-4">
       <div className="max-w-5xl mx-auto text-center">

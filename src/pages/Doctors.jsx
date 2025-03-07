@@ -1,16 +1,27 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { AppContext } from "../context/AppContext";
 
 function Doctors() {
   const { speciality } = useParams();
-  console.log(speciality);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
+  const [filterDocs, setfilterDocs] = useState([]);
+  const { doctors } = useContext(AppContext);
+
+  const appliedFilter = () => {
+    if (speciality) {
+      setfilterDocs(doctors.filter((doc) => doc.speciality === speciality));
+    } else {
+      setfilterDocs(doctors);
+    }
+  };
+  useEffect(() => {
+    appliedFilter();
+  }, [speciality, doctors]);
   const [selectedSpecialty, setSelectedSpecialty] =
     useState("General physician");
 
-  const { doctors } = useContext(AppContext);
   const specializations = [
     "General physician",
     "Gynecologist",
@@ -97,7 +108,7 @@ function Doctors() {
         </div>
 
         <div className="md:col-span-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-center">
-          {doctors.map((doctor, index) => (
+          {filterDocs.map((doctor, index) => (
             <div
               key={index}
               className="bg-white  p-4 rounded-lg shadow-md text-center flex flex-col sm:items-start items-center cursor-pointer"
