@@ -1,4 +1,6 @@
+import Footer from "../component/Footer";
 import Header from "../component/Header";
+import LearnMoreBaner from "../component/LearnMoreBaner";
 import Specialisation from "../component/specialisation";
 import TopDoctors from "../component/TopDoctors";
 
@@ -7,7 +9,9 @@ function Home() {
     <div>
       <Header />
       <Specialisation />
-      <TopDoctors/>
+      <TopDoctors />
+      <LearnMoreBaner />
+      <Footer />
     </div>
   );
 }

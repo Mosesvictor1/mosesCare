@@ -8,6 +8,7 @@ import appointment_img from "./appointment_img.png";
 import header_img from "./header_img.png";
 import bg from "./bg.png";
 import hero_bg from "./hero_bg.png";
+import learnmore from "./learnmore.png";
 import group_profiles from "./group_profiles.png";
 import profile_pic from "./profile_pic.png";
 import contact_image from "./contact_image.png";
@@ -48,6 +49,7 @@ import Pediatricians from "./Pediatricians.svg";
 
 export const assets = {
   certified_icon,
+  learnmore,
   money_icon,
   satisfaction_rate,
   video_icon,
